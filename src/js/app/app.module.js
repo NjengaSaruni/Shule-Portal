@@ -1,3 +1,11 @@
 'use strict';
 
-angular.module('shule',['bookList']);
+angular.module('shule',[
+	// external
+	'ngRoute',
+	'ngResource',
+
+	// internal
+	'bookList'
+
+	]);
