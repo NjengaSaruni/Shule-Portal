@@ -15,9 +15,8 @@ angular.module('bookDetail').
 
 		    angular.forEach(bookItems, function(book){
 		    	if(book.id == $routeParams.id){
-		    		$scope.book = book
+		    		$scope.bookItem = book
 		    	}
 		    })
-
 		}
 });
