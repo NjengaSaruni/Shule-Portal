@@ -9,5 +9,7 @@ angular.module('shule',[
 	'bookDetail',
 	'bookList',
 	'userDetail',
-	'userList'
+	'userList',
+
+	'confirmClick',
 	]);

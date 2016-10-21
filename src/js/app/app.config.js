@@ -17,9 +17,9 @@ angular.module('shule').
 		when("/users/:id", {
 			template: "<user-detail></user-detail>" 
 		}).
-/*		when("/books/:id/:abc", {
-			template: "<book-list></book-list>" 
-		}).*/
+		when("/books/:id", {
+			template: "<book-detail></book-detail>" 
+		}).
 		otherwise({
 			template: "Not Found"
 		})
