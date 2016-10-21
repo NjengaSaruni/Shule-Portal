@@ -3,7 +3,7 @@
 	<ul ng-if='bookItems.length > 0'>
 		<span>{{ bookItems.length }} books available</span>
 		<li ng-repeat='bookItem in bookItems'>
-			<a href='books/{{ bookItem.id }}'>{{ bookItem.title }}</a>
+			<a ng-href='books/{{ bookItem.id }}' confirm-click='Are you sure?'/>{{ bookItem.title }}</a>
 		</li>
 	</ul>
 	
