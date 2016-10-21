@@ -1,23 +1,28 @@
 'use strict';
 
 angular.module('shule').
-	config(function($locationProvider,$routeProvider)
-	{
-		$locationProvider.hmtl5Mode({
-			enabled: true
-		})
-
-		$routeProvider.
+	config(['$routeProvider', '$locationProvider', 
+	function($routeProvider, $locationProvider) 
+{
+   $routeProvider.
 		when("/", {
 			template: "<book-list></book-list>"
 		}).
-		when("/book/1/", {
-			template: "<h1>Hi<h1>" 
+		when("/about", {
+			templateUrl: "/templates/about.html"
 		}).
-		when("/book/2/", {
+		when("/users", {
+			template: "<user-list></user-list>" 
+		}).
+		when("/users/:id", {
+			template: "<user-detail></user-detail>" 
+		}).
+/*		when("/books/:id/:abc", {
 			template: "<book-list></book-list>" 
-		}).
+		}).*/
 		otherwise({
 			template: "Not Found"
 		})
-	});
+
+   $locationProvider.html5Mode(true);
+}]);
