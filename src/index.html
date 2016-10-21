@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='shule'>
 	<head>
+		<base href="/">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 		<title> Shule </title>
+		<!-- <script src="./js/angular.min.js"></script>-->
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script> 
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js'></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js'></script>
+
+		<script src='/js/app/app.module.js'></script>
+		<script src='/js/app/app.config.js'></script>
+		
+		<script src='/js/app/book-list/book-list.module.js'></script>
+		<script src='/js/app/book-list/book-list.component.js'></script>
+		<script src='/js/app/book-detail/book-detail.module.js'></script>
+		<script src='/js/app/book-detail/book-detail.component.js'></script>
+		<script src='/js/app/user-list/user-list.module.js'></script>
+		<script src='/js/app/user-list/user-list.component.js'></script>
+		<script src='/js/app/user-detail/user-detail.module.js'></script>
+		<script src='/js/app/user-detail/user-detail.component.js'></script>
+
+		<style>
+			.new-class {
+				font-size: 42px;
+				color : green;
+			}
+		</style>
 	</head>
 	<body>
-		<h1> Welcome to Shule </h1>
+		<h1 class="new-class">Shule</h1>
+		<div ng-view>
+			
+		</div>
 	</body>
 </html>
