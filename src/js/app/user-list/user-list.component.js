@@ -6,6 +6,10 @@ angular.module('userList').
 		controller: function(User, $http, $location, $routeParams, $scope) {
 
 		$scope.userItems =  User.query();
+
+        $scope.addUser = function(){
+
+        };
 	}
 	
 });
