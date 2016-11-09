@@ -2,8 +2,8 @@
 
 angular.module('user').
 	factory('User', function($resource){
-		var url = 'http://10.4.47.26:9999/users/users/'
-		return $resource(url, {}, {
+		var url = 'http://0.0.0.0:1234/users/users/:user'
+		return $resource(url, {user: '@user'}, {
 			
 			query: {
 				method: "GET",
@@ -16,7 +16,7 @@ angular.module('user').
 			get: {
 				method: "GET",
 				params: {},
-				isArray: true,
+				isArray: false,
 				cache: true,
 			}
 		})

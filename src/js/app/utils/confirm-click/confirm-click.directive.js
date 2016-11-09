@@ -13,13 +13,11 @@ angular.module('confirmClick').
 			link: function(scope, element, attr){
 				var msg = scope.message || "Are you sure?"
 				element.bind("click", function(event){
-					if(window.confirm(msg)){
-						console.log('/users/' + scope.user.id)
-						$rootScope.$apply(function(){
-							$location.path('/users/' + scope.user.id)
-						})
-					}
-
+									
+					console.log('/users/' + scope.user.id)
+					$rootScope.$apply(function(){
+						$location.path('/users/' + scope.user.id)
+					})
 				})
 				console.log(scope)
 			}
