@@ -1,0 +1,13 @@
+<h2>Login</h2>
+
+<form name='authForm' ng-submit='loginUser()'>
+
+    <input type='email' name='email' placeholder='Email'ng-model='userData.email'/></br>
+
+    <input type='password' name='password' placeholder='Password' ng-model='userData.password'/>
+    <input type='submit' value='Login'/>
+
+</form>  
+
+<span> {{ userData | json }}</span>
+    
