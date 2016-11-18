@@ -6,6 +6,7 @@ angular.module('shule',[
 	'ngResource',
 
 	// internal
+	'authentication',
 	'bookDetail',
 	'bookList',
 	'userDetail',
