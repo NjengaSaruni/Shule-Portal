@@ -1,13 +1,11 @@
-<h2>Login</h2>
+<h2 class='text-centre'>Login</h2>
+<div class="container">
+    <form name='authForm' ng-submit='loginUser()'>
+        <input type='email' class='form-control' name='email' placeholder='Email'ng-model='userData.email'/></br>
 
-<form name='authForm' ng-submit='loginUser()'>
+        <input type='password' class='form-control' name='password' placeholder='Password' ng-model='userData.password'/>
+        <button class="form-control btn btn-default" ng-submit='loginUser()'>Login</button>
+    </form>  
+</div>
 
-    <input type='email' name='email' placeholder='Email'ng-model='userData.email'/></br>
-
-    <input type='password' name='password' placeholder='Password' ng-model='userData.password'/>
-    <input type='submit' value='Login'/>
-
-</form>  
-
-<span> {{ userData | json }}</span>
     
