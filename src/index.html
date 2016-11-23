@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" ng-app='shule'>
 	<head>
-		<base href="/">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+		<base href="/">
 		<title> Shule </title>
 		<!-- <script src="./js/angular.min.js"></script>-->
+		<link ng-href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a ng-href="#" class="navbar-brand">Shule</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="text-primary"><a ng-href="#home">Home</a>
+						<li><a ng-href="#about">About Us</a>
+						<li><a ng-href="#contactus">Contact Us</a>
+						<li><a ng-href="#portal">Portal</a>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="jumbotron" ng-view>
+			
+		</div>
+
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script> 
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js'></script>
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js'></script>
@@ -24,6 +52,8 @@
 		<script src='/js/app/book-list/book-list.component.js'></script>
 		<script src='/js/app/book-detail/book-detail.module.js'></script>
 		<script src='/js/app/book-detail/book-detail.component.js'></script>
+		<script src='/js/app/register/register.module.js'></script>
+		<script src='/js/app/register/register.component.js'></script>
 		<script src='/js/app/user-list/user-list.module.js'></script>
 		<script src='/js/app/user-list/user-list.component.js'></script>
 		<script src='/js/app/user-detail/user-detail.module.js'></script>
@@ -31,18 +61,5 @@
 
 		<script src='/js/app/utils/confirm-click/confirm-click.module.js'></script>
 		<script src='/js/app/utils/confirm-click/confirm-click.directive.js'></script>
-
-		<style>
-			.new-class {
-				font-size: 42px;
-				color : green;
-			}
-		</style>
-	</head>
-	<body>
-		<h1 class="new-class">Shule</h1>
-		<div ng-view>
-			
-		</div>
 	</body>
 </html>

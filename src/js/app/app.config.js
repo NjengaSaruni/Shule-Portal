@@ -17,6 +17,9 @@ angular.module('shule').
 		when("/users", {
 			template: "<user-list></user-list>" 
 		}).
+		when("/register", {
+		template: "<register></register>" 
+		}).
 		when("/users/:id", {
 			template: "<user-detail></user-detail>" 
 		}).

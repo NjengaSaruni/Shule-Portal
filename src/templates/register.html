@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class='text-centre'>Register</h1>
+    <form name='registerForm'>
+        <input type='email' class='form-control' name='email' placeholder='Email'ng-model='userData.email'/>
+
+        </br>
+
+        <input type='password' class='form-control' name='password' placeholder='Password' ng-model='userData.password'/>
+
+        <br>
+
+        <input type='password' class='form-control' name='password' placeholder='Password again' ng-model='password
+        _check'/>
+
+        <br>
+
+        <input type='text' class='form-control' name='first_name' placeholder='First Name' ng-model='userData.first_name'/>
+
+        <br>
+
+        <input type='text' class='form-control' name='last_name' placeholder='Last Name' ng-model='userData.last_name'/>
+
+        <br>
+
+        <button class="form-control btn btn-default" ng-click='registerUser()'>Register</button>
+    </form> 
+
+</div>
