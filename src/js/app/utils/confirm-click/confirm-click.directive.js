@@ -9,7 +9,7 @@ angular.module('confirmClick').
 				user: "=user"
 			},
 			restrict: "E",
-			template: "<a ng-href='#}'>{{ user.first_name }}</a>",
+			template: "<a ng-href='#}'>{{ user.first_name }} {{ user.last_name }}</a>",
 			link: function(scope, element, attr){
 				var msg = scope.message || "Are you sure?"
 				element.bind("click", function(event){

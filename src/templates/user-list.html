@@ -1,11 +1,17 @@
-<h1>User List View</h1>
-
-	<ul ng-if='userItems.length > 0'>
-		<span>{{ userItems.length }} users in the system</span>
-		<li ng-repeat='userItem in userItems'>
-			<confirm-click message='Are you positive?' user='userItem'></confirm-click>
-		</li>
-	</ul>
-	
-	<span ng-if='userItems.length == 0'>No users in system</span>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="h1">User List View</h1>
+    	    <ul class="list-group" ng-if='userItems.length > 0'>
+    		<span>{{ userItems.length }} users in the system</span>
+    		<li class"list-group-item" ng-repeat='userItem in userItems'>
+    			<confirm-click message='Are you positive?' user='userItem'></confirm-click>
+                <span class="badge">New</span>
+    		</li>
+    	   </ul>
+    	
+    	   <span ng-if='userItems.length == 0'>No users in system</span>
+        </div>
+    </div>
+</div>
 

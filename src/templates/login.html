@@ -1,11 +1,16 @@
-<h2 class='text-centre'>Login</h2>
 <div class="container">
-    <form name='authForm' ng-submit='loginUser()'>
-        <input type='email' class='form-control' name='email' placeholder='Email'ng-model='userData.email'/></br>
+    <div ng-style="{'margin': '0 auto'}">
+        <h2 class='text-centre'>Login</h2>
+        <form name='authForm' ng-submit='loginUser()'>
+            <label for="email">Email address:</label>
+            <input type='email' class='form-control' name='email' placeholder='e.g john@doe.com'ng-model='userData.email'/></br>
 
-        <input type='password' class='form-control' name='password' placeholder='Password' ng-model='userData.password'/>
-        <button class="form-control btn btn-default" ng-submit='loginUser()'>Login</button>
-    </form>  
+            <label for="pwd">Password:</label>
+            <input type='password' class='form-control' name='password' placeholder='' ng-model='userData.password'/>
+            <br>
+            <button class="form-control btn btn-default" ng-submit='loginUser()'>Login</button>
+        </form>  
+    </div>
 </div>
 
     

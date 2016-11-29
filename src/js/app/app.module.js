@@ -9,6 +9,7 @@ angular.module('shule',[
 	'authentication',
 	'bookDetail',
 	'bookList',
+	'home',
 	'register',
 	'userDetail',
 	'userList',

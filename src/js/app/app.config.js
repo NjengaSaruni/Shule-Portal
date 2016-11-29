@@ -6,7 +6,7 @@ angular.module('shule').
 {
    $routeProvider.
 		when("/", {
-			template: "<book-list></book-list>"
+			template: "<home></home>"
 		}).
 		when("/login", {
 			template: "<authentication></authentication>"
