@@ -3,7 +3,7 @@ angular.module('register').
         templateUrl: '/templates/register.html',
 
         controller: function(Register, $routeParams, $scope) {
-            $scope.userData = {}
+            // $scope.userData = {}
             
             $scope.registerUser = function(){
                 Register.post($scope.userData)

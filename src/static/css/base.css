@@ -1,0 +1,12 @@
+.landpage
+{
+    background-image: url('/static/images/keyboard.jpg');
+}
+
+.jumbotron{
+    color: white;
+}
+
+.panel{
+    background: inherit;
+}
